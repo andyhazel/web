@@ -1,0 +1,121 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+        <title>Andy Hazel &#124; Home</title>
+    </head>
+    <body>
+        <div class="container home">
+                <div class="content">
+                    
+                    <nav>
+                        <div class="nav-mobile">
+                            <a class="current" href="index.html">Home</a>
+                            <span class="menu-open">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="7" viewBox="0 0 30 7" fill="none">
+                                <rect width="30" height="1" fill="#191919"/>
+                                <rect y="6" width="30" height="1" fill="#191919"/>
+                            </svg>
+                             </span>
+                        </div>
+                           
+                        <div class="nav-desktop two-column">
+                            <div class="links">
+                                <a class="current" href="index.html">Home</a>
+                                <a href="bio.html">Biography</a>
+                            </div>
+                            <div class="links">
+                            
+                                <a href="vizcom.html">Vizcom</a>
+                                <a href="floormap.html">FloorMap</a>
+                                <a href="fore.html">Fore</a>
+                                <a href="vergesense.html">VergeSense</a>
+                            
+                            </div>
+                        </div>
+
+                        <div class="menu">
+                            
+                            <div class="nav-mobile">
+                                <a class="current" href="index.html">Home</a>
+                                <span class="menu-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="7" viewBox="0 0 30 7" fill="none">
+                                        <rect y="4" width="30" height="1" fill="#fcfcfc"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <a class="menu-link" href="bio.html">Biography</a>
+
+                            <div class="links">
+                                <a class="menu-link" href="vizcom.html">Vizcom</a>
+                                <a class="menu-link" href="floormap.html">FloorMap</a>
+                                <a class="menu-link" href="fore.html">Fore</a>
+                                <a class="menu-link" href="vergesense.html">VergeSense</a>
+                            </div>
+                           
+                        <div class="contact">
+                            <p class="text-white">Get in touch</p>
+                            <a href="mailto:work@andyhazel.com">work@andyhazel.com</a>
+                            
+                        </div>
+                        </div>
+                        
+                    </nav>
+                    <h1>Infinitely curious.</h1>
+                    <section class="two-column">
+                        <div>
+                            <img src="img/view.bmp" alt="">
+
+                        </div>
+                        <div>
+                        
+                        
+                            <p>My name is Andy Hazel, and I work in design and music. Drawing on 10+ years of experience, I led design for startups to define, launch, and scale their products. Most notably, I designed <a target="_blank" class="underline" href="https://www.vergesense.com">VergeSense</a> and <a target="_blank" class="underline" href="https://www.vizcom.ai">Vizcom</a>.
+                            </p>
+                            <p class="text-secondary">And if I'm not working on music &mdash; <a target="_blank" class="underline text-secondary" href="https://open.spotify.com/playlist/1t4H484s3m3RhR5y2Q5pZB">I work to it.</a></p>
+                        
+                        
+                        </div>
+                    </section>
+
+                    
+                     <footer class="two-column">
+                        <p>Bookings now open.</p>    
+                        <div class="links">
+                            <div class="email">
+                                <p>Contact</p>
+                                <a href="mailto:work@andyhazel.com">work@andyhazel.com</a>
+                            </div>
+                            <div class="links">
+                                <a target="_blank" href="https://www.linkedin.com/in/andyhzl">LinkedIn</a>
+                                <a target="_blank" href="https://dribbble.com/andyhazel">Dribbble</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                 <div class="notice">
+                     <small>&copy; 2025 Andy Hazel. </small>
+                     <small class="text-secondary">This is a static, hand-coded website.</small>
+                     <small class="text-secondary">It does not use cookies.</small>
+                 </div>      
+            </div>
+
+            <script>
+                const menu = document.querySelector('.menu');
+
+                document.querySelector('.menu-open').addEventListener('click', () => {
+                    menu.style.padding = 'var(--space-lg) var(--space) var(--space) var(--space)';
+                    menu.style.height = '450px';
+                });
+
+                document.querySelector('.menu-close').addEventListener('click', () => {
+                    menu.style.padding = '0 var(--space)';
+                    menu.style.height = '0';   
+                });      
+            </script>
+        
+    </body>
+</html>
