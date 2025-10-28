@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Andy Hazel &#124; Home</title>
+</head>
+
+<body>
+    <div class="container home">
+        <div class="content">
+            <nav>
+                <div class="nav-desktop two-column">
+                    <div class="links">
+                        <a class="current" href="index.html">Home</a>
+                        <a href="bio.html">Biography</a>
+                    </div>
+                        <p class="text-white">updating case studies :&rpar;&rpar;&rpar;</p>
+                </div>
+            </nav>
+            <h1>Infinitely curious.</h1>
+            <div class="two-column">
+                <div>
+                    <img src="https://cdn.andyhazel.com/view.webp" alt="">
+                </div>
+                <div class="intro">
+                    <p>My name is Andy Hazel, and I work in design and music. Drawing on 10+ years of experience, I led
+                        design for startups to define, launch, and scale their products. Most notably, I designed <a
+                            target="_blank" class="underline" href="https://www.vergesense.com">VergeSense</a> and <a
+                            target="_blank" class="underline" href="https://www.vizcom.ai">Vizcom</a>.
+                    </p>
+                    <p class="text-secondary">And if I'm not working on music &mdash; <a target="_blank"
+                            class="underline text-secondary"
+                            href="https://open.spotify.com/playlist/1t4H484s3m3RhR5y2Q5pZB">I work to it.</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="two-column">
+            <p>Bookings now open.</p>
+            <div class="contact">
+                <div class="email">
+                    <p>Contact</p>
+                    <a href="mailto:work@andyhazel.com">work@andyhazel.com</a>
+                </div>
+                <div class="links">
+                    <a target="_blank" href="https://www.linkedin.com/in/andyhzl">LinkedIn</a>
+                    <a target="_blank" href="https://dribbble.com/andyhazel">Dribbble</a>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu');
+
+        document.querySelector('.menu-open').addEventListener('click', () => {
+            menu.style.padding = 'var(--space-lg) var(--space) var(--space) var(--space)';
+            menu.style.height = '450px';
+        });
+
+        document.querySelector('.menu-close').addEventListener('click', () => {
+            menu.style.padding = '0 var(--space)';
+            menu.style.height = '0';
+        });
+    </script>
+
+</body>
+
+</html>
