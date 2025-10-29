@@ -30,12 +30,7 @@
     font-family: "Unica";
     src: url("fonts/regular.woff2");
     font-weight: 400;
-}
-
-@font-face {
-    font-family: "Unica";
-    src: url("fonts/medium.woff2");
-    font-weight: 500;
+    font-display: swap;
 }
 
 
@@ -43,7 +38,7 @@ body {
     width: 100%;
     background-color: var(--bg);
     color: var(--text-primary);
-    font-family: "Unica", sans-serif;
+    font-family: "Unica", Arial, sans-serif;
     font-size: var(--text);
     letter-spacing: 0px;
     font-weight: 400;
