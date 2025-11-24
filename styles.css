@@ -190,6 +190,7 @@ nav .text-white:hover {
 }
 
 .portrait {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -205,12 +206,41 @@ nav .text-white:hover {
     justify-content: space-between;
 }
 
+.addendum {
+    padding-top: var(--space-xs);
+    padding-right: var(--space-lg);
+}
+
+.text-small {
+    font-size: var(--text-sm);
+}
+
+.signature {
+    width: 45px;
+    height: auto;
+    position: absolute;
+    bottom: -37px;
+    right: 7px;
+
+}
+
+.bio .content {
+    padding-bottom: var(--space-lg);
+}
+
 /* mobile only */
 
 @media (max-width: 1079px) {
 
 
+    .addendum {
+        padding-right: 0;
+    }
 
+
+    .addendum.desktop {
+        display: none;
+    }
 
     .text-white {
         display: none;
@@ -261,9 +291,14 @@ nav .text-white:hover {
 
 }
 
+
 /* desktop only */
 
 @media (min-width: 1080px) {
+
+    .addendum.mobile {
+        display: none;
+    }
 
 
     .two-column {
