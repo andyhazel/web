@@ -1,3 +1,4 @@
+<!-- handcoded by yours truly <3 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
     <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js" defer></script>
     <title>Andy Hazel &#124; Biography</title>
     <meta name="description" content="The biography of Andy Hazel, a designer and music producer based in Zagreb, Croatia.">
 
@@ -16,18 +18,70 @@
 
 
         <nav>
+            <div class="nav-mobile">
+                <a class="text-primary" href="/">Home</a>
+                <span class="menu-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="7" viewBox="0 0 30 7" fill="none">
+                        <rect width="30" height="1" fill="#191919" />
+                        <rect y="6" width="30" height="1" fill="#191919" />
+                    </svg>
+                </span>
+            </div>
+
+
             <div class="nav-desktop two-column">
                 <div class="links">
                     <a href="/">Home</a>
                     <a class="current" href="/bio">Biography</a>
                 </div>
-                <p class="text-white">case studies updating :&rpar;&rpar;&rpar;</p>
+                <div class="links">
+                    <a href="/vizcom">Vizcom</a>
+                    <a href="/floormap">FloorMap</a>
+                    <a href="/fore">Fore</a>
+                    <a href="/vergesense">VergeSense</a>
+
+                </div>
+            </div>
+
+            <div class="menu">
+
+                <div class="menu-top">
+                    <div class="nav-mobile">
+                        <a href="/">Home</a>
+                        <span class="menu-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="7" viewBox="0 0 30 7" fill="none">
+                                <rect y="4" width="30" height="1" fill="#fcfcfc" />
+                            </svg>
+                        </span>
+                    </div>
+                    <a class="current" href="/bio">Biography</a>
+                </div>
+
+                <div class="links">
+
+                    <a href="/vizcom">Vizcom</a>
+                    <a href="/floormap">FloorMap</a>
+                    <a href="/fore">Fore</a>
+                    <a href="/vergesense">VergeSense</a>
+
+                </div>
+
+                <div class="contact">
+                <div class="email">
+                    <p class="text-white">Contact</p>
+                    <a href="mailto:work@andyhazel.com" target="_blank">work@andyhazel.com</a>
+                </div>
+                <div class="links row">
+                    <a target="_blank" href="https://www.linkedin.com/in/andyhzl">LinkedIn</a>
+                    <a target="_blank" href="https://dribbble.com/andyhazel">Dribbble</a>
+                </div>
+            </div>
             </div>
 
         </nav>
 
         <h1>Biography</h1>
-        <div class="two-column content">
+        <section class="two-column content">
             <div class="portrait">
                 <img src="https://cdn.andyhazel.com/andy_74.webp"
                     alt="Andy Hazel in front of a black wall. she is the best and you should hire her">
@@ -52,14 +106,14 @@
                 <p>I always held the most important characteristics of a designer to be their adaptability and
                     inquisitiveness. Upholding these values myself is the very least I can do.</p>
                     
-            <div class="addendum desktop text-secondary text-small">
-                    <p>I enjoy discussing architecture and urban planning, critiquing musicians, reading
-                        Wikipedia, and looking at used car ads.</p>
-                    <p>My favourite pieces of design include the classic Mac Pro, the Zune, and the Aston Martin DB9. I own two of the three.</p>
-                    <p>And if I'm not catching flights to rock concerts or finding refuge in Malta — I live and work in Zagreb, Croatia. </p>
+            <div class="addendum desktop text-secondary">
+                    <small>I enjoy discussing architecture and urban planning, critiquing musicians, reading
+                        Wikipedia, and looking at used car ads.</small>
+                    <small>My favourite pieces of design include the classic Mac Pro, the Zune, and the Aston Martin DB9. I own two of the three.</small>
+                    <small>And if I'm not catching flights to rock concerts or finding refuge in Malta — I live and work in Zagreb, Croatia. </small>
             </div>
             </div>
-        </div>
+        </section>
 
          <div class="addendum mobile text-secondary text-small">
                     <p>I enjoy discussing architecture and urban planning, critiquing musicians, reading
@@ -73,7 +127,7 @@
             <div class="contact">
                 <div class="email">
                     <p>Contact</p>
-                    <a href="mailto:work@andyhazel.com">work@andyhazel.com</a>
+                    <a href="mailto:work@andyhazel.com" target="_blank">work@andyhazel.com</a>
                 </div>
                 <div class="links">
                     <a target="_blank" href="https://www.linkedin.com/in/andyhzl">LinkedIn</a>

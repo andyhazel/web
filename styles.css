@@ -14,18 +14,22 @@
     --text: 16px;
     --text-sm: 14px;
 
-    --line: 100%;
+    --line-sm: 100%;
+    --line: 135%;
     --line-lg: 170%;
 }
+
 * {
     padding: 0;
     margin: 0;
     transition: .5s ease-in-out;
+    font-weight: 400;
 }
 
 ::selection {
     background: var(--outline)
 }
+
 @font-face {
     font-family: "Unica";
     src: url("fonts/regular.woff2");
@@ -33,6 +37,19 @@
     font-display: swap;
 }
 
+
+
+small, caption {
+    display: block;
+    line-height: var(--line-lg);
+    font-size: var(--text-sm);
+    padding-bottom: 10px;
+}
+
+.data small {
+    padding: 0;
+    line-height: var(--line);
+}
 
 body {
     width: 100%;
@@ -48,7 +65,7 @@ h1 {
 
     padding-bottom: var(--space-xs);
     font-weight: 400;
-    line-height: var(--line);
+    line-height: var(--line-sm);
 }
 
 h1 {
@@ -56,23 +73,40 @@ h1 {
     letter-spacing: -2px;
 }
 
+h2 {
+    font-size: 25px;
+    letter-spacing: -.2px;
+    line-height: var(--line);
+}
+
 .home h1 {
     padding-right: var(--space-lg);
 }
 
 
-
+.end {
+    padding-bottom: var(--space-sm);
+}
 
 .two-column {
     padding: 0;
 }
 
-a, p {
+p {
     line-height: var(--line-lg);
 }
 
-.two-column p {
-    padding: 0;
+.menu a, footer a {
+    line-height: var(--line-lg);
+}
+
+
+.double-paragraph {
+    padding-right: var(--space-lg);
+}
+
+.bottom {
+    padding-bottom: var(--space);
 }
 
 a {
@@ -131,10 +165,6 @@ nav {
 
 
 
-.nav-mobile {
-    display: none;
-}
-
     .links {
         display: flex;
         gap: var(--space-sm);
@@ -158,8 +188,6 @@ nav .two-column {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
     font-size: var(--text-sm);
 
 }
@@ -170,6 +198,10 @@ footer {
     display: flex;
     gap: var(--space-xs);
     padding-right: var(--space-xs);
+}
+
+.text-primary {
+    color: var(--text-primary);
 }
 
 .text-secondary {
@@ -201,6 +233,13 @@ nav .text-white:hover {
     width: 100%;
 }
 
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding-bottom: var(--space);
+}
+
 .contact {
     display: flex;
     justify-content: space-between;
@@ -211,9 +250,6 @@ nav .text-white:hover {
     padding-right: var(--space-lg);
 }
 
-.text-small {
-    font-size: var(--text-sm);
-}
 
 .signature {
     width: 45px;
@@ -224,13 +260,104 @@ nav .text-white:hover {
 
 }
 
-.bio .content {
+
+
+.top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;;
+    cursor: pointer;
+    background: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: var(--space);
+    right: 0;
+    opacity: 0;
+}
+
+.border-light, section {
+    border-bottom: solid .5px #ccc ;
+
+}
+
+section {
     padding-bottom: var(--space-lg);
+}
+
+section:last-of-type {
+    border-bottom: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm)
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.flagged {
+    background: yellow;
 }
 
 /* mobile only */
 
 @media (max-width: 1079px) {
+
+        .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 0px;
+        overflow: hidden;
+        inset: 0 0 auto 0;
+        padding: 0 var(--space);
+        background: var(--text-primary);
+        gap: var(--space-sm);
+
+    }
+
+    .menu-top {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        padding-bottom: var(--space-sm);
+    }
+
+    .nav-desktop.two-column {
+        display: none;
+    }
+
+     .nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    a:hover {
+    color: var(--text-secondary);
+}
+
+    .email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .email p {
+        margin-bottom: 0;
+    }
+
+
+    .menu .contact {
+        padding-bottom: var(--space-sm);
+    }
 
 
     .addendum {
@@ -242,28 +369,31 @@ nav .text-white:hover {
         display: none;
     }
 
-    .text-white {
-        display: none;
-    }
 
     .portrait {
         order: 2;
     }
 
     .menu .links {
-        padding-top: var(--space-xl);
+        flex-direction: column;
+        flex-grow: 1;
+        padding-top: var(--space);
+    }
+    
+
+    .menu .links.row {
+        flex-direction: row;
+        flex-grow: 0;
+        padding-top: 0;
     }
 
-    .menu-link {
+    .current {
         color: var(--bg);
     }
 
-
     .contact {
-        display: flex;;
-        flex-direction: column;
-        padding-top: var(--space);
-        font-size: 13px;
+        font-size: var(--text-sm);
+        align-items: end;
     }
 
     .menu p {
@@ -274,20 +404,7 @@ nav .text-white:hover {
         padding: 0 var(--space);
     }
 
-    .two-column {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space);
-    }
 
-    footer.two-column {
-        gap: 0;
-    }
-
-
-    .row-span {
-        grid-row: span 2;
-    }
 
 }
 
@@ -295,6 +412,10 @@ nav .text-white:hover {
 /* desktop only */
 
 @media (min-width: 1080px) {
+
+    .nav-mobile {
+        display: none;
+    }
 
     .addendum.mobile {
         display: none;
@@ -311,6 +432,10 @@ nav .text-white:hover {
 
 .bottom {
     margin-bottom: var(--space-lg);
+}
+
+.end {
+    margin-top: var(--space);
 }
 
 }
