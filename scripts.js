@@ -30,7 +30,9 @@ const btt = document.querySelector('.top');
 let x = 0;
 let y = 100; 
 
-// button position
+if (btt) {
+
+  // button position
 function updateX() {
   if (window.innerWidth >= 1080) {
     // (width - container / 2) - button - spacing
@@ -85,3 +87,6 @@ window.addEventListener('scroll', () => {
 btt.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+}
+
