@@ -134,6 +134,27 @@ img {
     width: 100%;
 }
 
+.ribbon {
+    width: 100%;
+    height: 45px;
+    background: var(--text-primary);
+    display: none;
+    justify-content: center;
+    
+}
+
+.ribbon div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    width: 100%;
+    max-width: 960px;
+}
+
+.ribbon small {
+    padding: 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -299,9 +320,8 @@ section:last-of-type {
     gap: var(--space-xs);
 }
 
-.flagged {
-    background: yellow;
-}
+
+
 
 /* mobile only */
 
