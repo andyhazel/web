@@ -1,3 +1,3 @@
 hey —
 
-production is deployed at https://andyhazel.com
+the web site is live at https://andyhazel.com
